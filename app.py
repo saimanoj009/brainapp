@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/app.py << 'PYEOF'
 import streamlit as st
 import numpy as np
 import cv2
@@ -850,5 +849,3 @@ st.markdown("""
   <a href="mailto:saimanoj0914@gmail.com">saimanoj0914@gmail.com</a>
 </div>
 """, unsafe_allow_html=True)
-PYEOF
-echo "done"
