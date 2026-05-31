@@ -567,10 +567,10 @@ if file:
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<div class='glass-card'><h3>🖼️ Original scan</h3></div>", unsafe_allow_html=True)
-        st.image(img, use_container_width=True)
+        st.image(img, width=300)
     with col2:
         st.markdown("<div class='glass-card'><h3>🔥 Grad-CAM heatmap</h3></div>", unsafe_allow_html=True)
-        st.image(heatmap_img, use_container_width=True, channels="BGR")
+        st.image(heatmap_img, width=300, channels="BGR")
 
     # Prediction + confidence row
     st.markdown('<div class="section-label" style="margin-top:1.2rem;">Results</div>', unsafe_allow_html=True)
